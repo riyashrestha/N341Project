@@ -1,0 +1,35 @@
+<!--
+TITLE: Triggered
+AUTHOR: Riya Shrestha
+PURPOSE: Program to demonstrate the use of jQuery event trigger
+ORIGINALLY CREATED ON: 11/15/2019
+LAST MODIFIED ON: 11/15/2019
+LAST MODIFIED BY: Riya Shrestha (RS)
+MODIFICATION HISTORY: 
+"No modification"(RS)
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Triggered</title>
+    <meta charset="utf-8">
+    <!-- Link to some stylesheet goes first -->
+    <link href="triggered.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1>Triggered</h1>
+	
+	<button type = "button" id = "hide">Double click to let me hide</button>
+
+	<p id = "p1">Resize the window to load the cannons.</p>
+	<p id = "p2">Matey, press a key to fire the cannons to enemy.</p>
+	<p id = "p3">Don't come near</p>
+	<img src = "pirate3.jpg" alt = "Ship" width = "200" height = "250">
+
+	<!-- Link to hosted jQuery library goes after css file but before local js file -->
+    <!-- Probable performance boost if at very bottom of file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="triggered.js"></script>
+</body>
+</html>

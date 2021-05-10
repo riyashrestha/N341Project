@@ -1,0 +1,44 @@
+<!--
+TITLE: Ahoy jQuery
+AUTHOR: Riya Shrestha
+PURPOSE: Program to demonstrate the use of jQuery write methods
+ORIGINALLY CREATED ON: 10/25/2019
+LAST MODIFIED ON: 10/25/2019
+LAST MODIFIED BY: Riya Shrestha (RS)
+MODIFICATION HISTORY: 
+"No modification"(RS)
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+    
+        <title>jQuery Development Environment Setup</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+        <link href="ahoy.css" rel="stylesheet" type="text/css">
+		<!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script src="ahoyJquery.js"></script>
+    </head>
+    
+    <body>
+        <h1>Ahoy jQuery Challenge</h1>
+
+        <button type = "button" id = "append">Append text</button>
+        <button type = "button" id = "html">Replace text</button>
+        <button type = "button" id = "font">Change font</button>
+
+        <br><br>
+        <img src = "pirate.jpeg" alt = "Pirate" width = "200" height = "200">
+        <br>
+		<p>
+        	Ahoy Matey!
+        </p>
+    </body>
+
+</html>
+

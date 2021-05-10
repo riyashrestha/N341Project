@@ -1,0 +1,19 @@
+body
+{
+	background-image: url("musical.jpeg");
+}
+h1
+{
+	color: #ffff00;
+	text-align: center;
+}
+h3
+{
+	color: #990000;
+}
+div
+{
+	width:1000px;
+	background-color:#e6fff7;
+	margin: auto;
+}

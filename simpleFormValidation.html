@@ -1,0 +1,126 @@
+<!--
+TITLE: Simple Form Validation
+AUTHOR: Riya Shrestha
+PURPOSE: Program to validate a simple form
+ORIGINALLY CREATED ON: 12/06/2019
+LAST MODIFIED ON: 12/06/2019
+LAST MODIFIED BY: Riya Shrestha (RS)
+MODIFICATION HISTORY: 
+"No modification"(RS)
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+    <title>Simple Form Validation</title>
+    <!-- CSS to define theme colors -->
+    <link href="theme/jquery-ui.css" rel="stylesheet"> 
+    <!-- Link to some stylesheet goes first -->
+    <link href="formPrototype.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1>Musical Paradise</h1>
+	<div id="tabs">
+		<ul>
+			<li><a href="#music">Music Instruments</a></li>
+			<li><a href="#signUp">Sign Up</a></li>
+			<li><a href="#reach">Reach Us</a></li>
+		</ul>
+		<div id="music">
+			<div id="accordion">
+			<h3>String instruments</h3>
+				<div>
+					<img src="guitar.jpg" alt="Guitar" width="600" height="300">
+					<p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+			  	</div>
+			  	<h3>Wind Instruments</h3>
+			  	<div>
+			  		<img src="saxophone.png" alt="windInstruments" width="300" height="300">
+			    	<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+			  	</div>
+			  	<h3>Keyboards</h3>
+			  	<div>
+			  		<img src="piano.jpeg" alt="piano" width="400" height="300">
+			    	<p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+			    	<ul>
+			      		<li>List item one</li>
+			      		<li>List item two</li>
+			      		<li>List item three</li>
+			    	</ul>
+			  	</div>
+			  	<h3>Percussion</h3>
+			  	<div>
+			  		<img src="drumset.jpg" alt="drum" width="400" height="300">
+			    	<p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+			  	</div>    
+			</div>
+		</div>
+		<div id="signUp">
+			<div>
+				<form id="signUpForm">
+					*First Name: 
+					<input type="text" name="fname" id="fname" placeholder="John" required autofocus><br>
+					*Last Name: 
+					<input type="text" name="lname" id="lname" placeholder="Doe" required><br>
+					<fieldset>
+					    <legend>Intruments interested in:</legend>
+					    <label for="checkbox-1">String Instruments</label>
+					    <input type="checkbox" name="instr" id="checkbox-1" value="String Instruments">
+					    <label for="checkbox-2">Wind Instruments</label>
+					    <input type="checkbox" name="instr" id="checkbox-2" value="Wind Instruments">
+					    <label for="checkbox-3">Keyboards</label>
+					    <input type="checkbox" name="instr" id="checkbox-3" value="Keyboards">
+					    <label for="checkbox-4">Percussion</label>
+					    <input type="checkbox" name="instr" id="checkbox-4" value="Percussion">
+					</fieldset>
+					Birthday:
+					<input type="text" id="datepicker"><br>
+					*E-mail: 
+					<input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required><br>
+					*Password:
+					<input type="Password" name="pwd" id="password" required><br>
+					*Phone:
+					<input type="tel" name="phone" placeholder=1234567890 id="phone" required><br>
+					
+					<fieldset>
+					    <legend>Do you play any musical instrument?</legend>
+					    <label for="radio-1">Yes</label>
+					    <input type="radio" name="radio-1" id="radio-1" value="Yes">
+					    <label for="radio-2">No</label>
+					    <input type="radio" name="radio-1" id="radio-2" value="No">
+					</fieldset>
+					<br>
+					Music Experience:
+					<div>
+			        	<input type = "text" id = "spinner" value = "0" />
+			      	</div>
+					
+					<div class="ui-widget">
+						<label for="tags">Search music instrument:</label>
+						<input id="tags" placeholder="guitar">
+					</div>
+					<input type="submit" id="submit">
+					<input type="reset">
+					
+				</form>	
+				<div id="output"></div>
+			</div>
+		</div>
+		<div id="reach">
+		    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+
+		    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+		</div>
+	</div>
+	<!-- Link to hosted jQuery library goes after css file but before local js file -->
+    <!-- Probable performance boost if at very bottom of file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- jQuery UI functionality -->
+	<script src="theme/jquery-ui.js"></script>
+	<script src="simpleFormValidation.js"></script>	
+	<script src="validation/dist/jquery.validate.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<!--
+TITLE: Course Page
+AUTHOR: Riya Shrestha
+PURPOSE: Class Index Page to Host Lab Work for N341
+NOTE: Based on template provided by instructor
+ORIGINALLY CREATED ON: 08/30/2019
+LAST MODIFIED ON: 11/20/2019
+LAST MODIFIED BY: Riya Shrestha (RS)
+MODIFICATION HISTORY: 
+09/04/2019: Added JS hello world link (RS)
+09/11/2019: Added Multi writes link (RS)
+09/13/2019: Added Conversions link (RS)
+09/18/2019: Added Functions link (RS)
+09/25/2019: Added Randomness link (RS)
+10/02/2019: Added Iffy Programming link (RS)
+10/02/2019: Added More Ifs link (RS)
+10/09/2019: Added Looping through Arrays link (RS)
+10/11/2019: Added Strings link (RS)
+10/16/2019: Added Buttons link (RS)
+10/25/2019: Added Ahoy jQuery link (RS)
+11/01/2019: Added Pick Me link (RS)
+11/08/2019: Added Movers And Shakers link (RS)
+11/15/2019: Added Triggered link (RS)
+11/20/2019: Added Final Project link (RS)
+-->
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    
+<title>N341 Student Course Page</title>
+
+<!-- This css provides the colors and formatting for the page.
+     In this class, we will keep our css in an external file.
+     This internal css is included to keep the initial process simple. -->
+<style>
+*{
+	margin:0 0 6px;
+}
+header{
+	text-align:left;
+	color:white;
+	background-color:#134;
+	padding:30px 150px;
+}
+body {
+	background-color: #CCE0DF;	/*	Use the Color Picker to find the hex code of your favorite color
+									http://www.w3schools.com/tags/ref_colorpicker.asp */
+}
+body p {
+	padding-left: 2em;
+}
+
+
+li, li a{						/* Define the formatting for the links to the labs */
+	list-style: none;
+	background-color: #43ABA4;
+	text-align: center;
+	color: white;
+	border-radius: 3px;
+	padding: 2px;
+}
+
+h2{
+	width: 100%;
+	color: #1E6E68;
+	line-height: 40px;
+}
+h3{
+	color: #1E6E68;
+	line-height: 30px;
+	text-align: center;
+}
+
+#assignments{			/* Define the formatting for the <div id="asssignments"> box */
+	width: 720px;
+	margin: 0 auto;
+	box-shadow: 0 2px 15px #EEE;
+	min-height: 300px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: white;
+}
+#assignments ul {
+	float:left;
+	width: 300px;
+}
+
+hr{						/* Define the formatting for the <hr /> line between "Course Work" and lab links */
+	margin: 10px 0;
+	width: 100%;
+	float: left;
+}
+</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>CSCI N341 Course Page</h1>
+		<p>By Riya Shrestha</p>
+    </header>
+	<div id="assignments">
+		<h3> Course Work </h3>
+		<hr/> <!-- Draw a horizontal line with formatting defined by css -->
+ 
+		<ul>  <!-- Beginning of unordered list -->
+		
+			<li>  <!-- Start of first list item -->
+				<a href="testFile.html">Test File</a>  <!-- link to the Test File To Launch Our N341 Journey -->
+			</li>  <!-- End of first list item -->
+			
+			<li>  <!-- Start of second list item -->
+				<a href="helloworld.html">JS Hello World</a>  <!-- link to YOUR jsHelloWorld lab -->
+			</li>  <!-- End of second list item -->
+
+			<li>
+				<a href="jacksparrow.html">IDed and Styled</a>
+			</li>
+
+			<li>
+				<a href="multiwrites.html">Multi- Writes</a>
+			</li>
+
+			<li>
+				<a href="conversions.html">Conversions</a>
+			</li>
+
+			<li>
+				<a href="functions.html">Functions</a>
+			</li>
+
+			<li>
+				<a href="randomness.html">Randomness</a>
+			</li>
+
+			<li>
+				<a href="iffy.html">Iffy Programming</a>
+			</li>
+
+			<li>
+				<a href="moreifs.html">More Ifs</a>
+			</li>
+		
+		</ul>  <!-- End of first unordered list -->
+
+		<ul>
+
+			<li>
+				<a href="loop.html">Looping through Arrays</a>
+			</li>
+
+			<li>
+				<a href="strings.html">Strings</a>
+			</li>
+
+			<li>
+				<a href="buttons.html">Buttons</a>
+			</li>
+
+			<li>
+				<a href="ahoyJquery.html">Ahoy jQuery</a>
+			</li>
+
+			<li>
+				<a href="pickMe.html">Pick Me</a>
+			</li>
+
+			<li>
+				<a href="moversAndShakers.html">Movers And Shakers</a>
+			</li>
+
+			<li>
+				<a href="triggered.html">Triggered</a>
+			</li>
+
+			<li>
+				<a href="finalProject.html">Final Project</a>
+			</li>
+ 
+		</ul>  <!-- End of second unordered list -->
+	 
+	</div><!-- end div id="assignments" -->
+</body>
+</html>

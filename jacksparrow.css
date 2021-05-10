@@ -1,0 +1,19 @@
+#blackbeard
+{
+	background-color: #fc4e03;
+	color: black;
+	font-size: 28px;
+	font-family: sans-serif; 
+}
+
+#longben
+{
+	background-color: #03fc8c;
+	color: white;
+	font-size: 30px;
+	font-family: Times;
+}
+
+body {
+  background-color: lightblue;
+}

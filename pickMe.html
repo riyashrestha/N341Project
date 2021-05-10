@@ -1,0 +1,56 @@
+<!--
+TITLE: Pick Me
+AUTHOR: Riya Shrestha
+PURPOSE: Program to demonstrate the use of jQuery selection
+ORIGINALLY CREATED ON: 11/01/2019
+LAST MODIFIED ON: 11/01/2019
+LAST MODIFIED BY: Riya Shrestha (RS)
+MODIFICATION HISTORY: 
+"No modification"(RS)
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Pick Me</title>
+    <meta charset="utf-8">
+    <!-- Link to some stylesheet goes first -->
+    <link href="pickMe.css" rel="stylesheet" type="text/css">
+    <!-- Link to hosted jQuery library goes after css file but before local js file -->
+    <!-- Probable performance boost if at very bottom of file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Link to js file specific to this html page goes below hosted library link -->
+    <script src="pickMe.js"></script>
+</head>
+<body>
+    <h1>Pick Me Challenge</h1>
+
+    <button type = "button" id = "sByTag">Animate</button>
+    <button type = "button" id = "sByClass">Change Color</button>
+    <button type = "button" id = "sById">Append</button>
+    <button type = "button" id = "multipleInst">Multiple Instructions</button>
+    <button type = "button" id = "fByTag">Toughest pirates</button>
+    <button type = "button" id = "fByClass">Adding Border</button>
+    <button type = "button" id = "fById">Replacing Text</button>
+    <button type = "button" id = "reset">Reset</button>
+
+    <br>
+    <img src = "pirate1.png" id = "image1" alt = "Pirate1" width = "150" height = "150">
+    
+    <h2>Captain's favorite matey's be:</h2>
+
+    <div id = "goodWench" class = "pegLeg">Good Wench Calatrava Crunch</div><br>
+    <div id = "madBango" class = "hook">The Mad Bango Peg-leg</div><br>
+    <div id = "oneEyed" class = "beard">One-eyed Bratwurst Hook</div><br>
+    <div id = "oldScurvy" class = "pete">Old Scurvy Rach</div>
+    
+    <p id = "goldToothed" class = "hook">Gold-toothed Fonzie Pete</p>
+    <p id = "plankWalkin" class = "pegLeg">Plank-walkin' Brady the Parrot</p>
+    <p id = "deadEye" class = "beard">Deadeye Racing Sausage Beard</p>
+    <p id = "swashbuckling" class = "pegLeg">Swashbuckling Bernie of the Caribbean</p>
+    
+
+</body>
+</html>
+
